@@ -1,0 +1,11 @@
+Textures/
+Models/
+Release/
+Debug/
+x64/
+*.sdf
+*.obj
+*.exe
+*.fxo
+*.lib
+*.cod
