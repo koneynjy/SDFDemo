@@ -284,6 +284,19 @@ namespace FMath{
 
 	/** Returns a random float between 0 and 1, inclusive. */
 	static FORCEINLINE float FRand() { return Rand() / (float)RAND_MAX; }
+
+	/** Divides two integers and rounds up */
+	template <class T>
+	static FORCEINLINE T DivideAndRoundUp(T Dividend, T Divisor)
+	{
+		return (Dividend + Divisor - 1) / Divisor;
+	}
+
+	template <class T>
+	static FORCEINLINE T DivideAndRoundDown(T Dividend, T Divisor)
+	{
+		return Dividend / Divisor;
+	}
 }
 
 

@@ -78,6 +78,7 @@
   <ItemGroup>
     <ClInclude Include="Box.h" />
     <ClInclude Include="Config.h" />
+    <ClInclude Include="IntVector.h" />
     <ClInclude Include="kDop.h" />
     <ClInclude Include="MathUtil.h" />
     <ClInclude Include="Matrix.h" />
