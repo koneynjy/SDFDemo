@@ -3,7 +3,7 @@
 #define _MATRIX
 
 #include "Config.h"
-#include "Vector4.h"
+#include "Vector.h"
 
 /**
 * 4x4 matrix of floating point values.
@@ -132,7 +132,7 @@ public:
 	*	Transform a direction vector - will not take into account translation part of the FMatrix.
 	*	If you want to transform a surface normal (or plane) and correctly account for non-uniform scaling you should use TransformByUsingAdjointT.
 	*/
-	FORCEINLINE FVector4 TransformVector(const FVector4& V) const;
+	FORCEINLINE FVector4 TransformVector(const FVector& V) const;
 
 	/**
 	*	Transform a direction vector by the inverse of this matrix - will not take into account translation part.
@@ -241,6 +241,15 @@ FORCEINLINE FVector4 FMatrix::TransformFVector4(const FVector4 &P) const
 	VectorRegister VecR = VectorTransformVector(VecP, this);
 	VectorStoreAligned(VecR, &Result);
 	return Result;
+}
+
+/**
+*	Transform a direction vector - will not take into account translation part of the FMatrix.
+*	If you want to transform a surface normal (or plane) and correctly account for non-uniform scaling you should use TransformByUsingAdjointT.
+*/
+FORCEINLINE FVector4 FMatrix::TransformVector(const FVector& V) const
+{
+	return TransformFVector4(FVector4(V.X, V.Y, V.Z, 0.0f));
 }
 
 

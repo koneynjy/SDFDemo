@@ -3,7 +3,6 @@
 #define _KDOP
 
 #include "Config.h"
-#include "Vector4.h"
 #include "sse.h"
 #include "Matrix.h"
 #include "Box.h"

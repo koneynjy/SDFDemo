@@ -24,9 +24,6 @@
     <ClInclude Include="sse.h">
       <Filter>头文件</Filter>
     </ClInclude>
-    <ClInclude Include="Vector4.h">
-      <Filter>头文件</Filter>
-    </ClInclude>
     <ClInclude Include="Matrix.h">
       <Filter>头文件</Filter>
     </ClInclude>
@@ -48,9 +45,30 @@
     <ClInclude Include="IntVector.h">
       <Filter>头文件</Filter>
     </ClInclude>
+    <ClInclude Include="Float16.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="Float32.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="GraphicMath.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="BoxSphereBounds.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="Sphere.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="AsyncWork.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="main.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="AsyncWork.cpp">
       <Filter>源文件</Filter>
     </ClCompile>
   </ItemGroup>

@@ -76,19 +76,25 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
+    <ClInclude Include="AsyncWork.h" />
     <ClInclude Include="Box.h" />
+    <ClInclude Include="BoxSphereBounds.h" />
     <ClInclude Include="Config.h" />
+    <ClInclude Include="Float16.h" />
+    <ClInclude Include="Float32.h" />
+    <ClInclude Include="GraphicMath.h" />
     <ClInclude Include="IntVector.h" />
     <ClInclude Include="kDop.h" />
     <ClInclude Include="MathUtil.h" />
     <ClInclude Include="Matrix.h" />
     <ClInclude Include="MeshUtilities.h" />
     <ClInclude Include="RandomStream.h" />
+    <ClInclude Include="Sphere.h" />
     <ClInclude Include="sse.h" />
     <ClInclude Include="Vector.h" />
-    <ClInclude Include="Vector4.h" />
   </ItemGroup>
   <ItemGroup>
+    <ClCompile Include="AsyncWork.cpp" />
     <ClCompile Include="main.cpp" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
